@@ -1,0 +1,158 @@
+body 
+{
+
+    background-image: url(/images/bg-img-light\ \(5\).jpg);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: auto;
+    margin: 0;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
+button {
+    background: none;
+    color: inherit; 
+    border: none; 
+    padding: 0; 
+    font: inherit; 
+    cursor: pointer; 
+    outline: inherit; 
+  }
+
+
+  .icon1, .icon2, .icon3
+  {
+    background-color: black;
+    border-radius: 20px;
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 7px;
+  }
+
+  .icon1, .icon2, .icon3, .rotated1, .rotated2, .rotated3
+  {
+  transition: ease-in-out 0.5s;
+}
+
+.rotated1, .rotated2, .rotated3 {
+    opacity: 0.55s ease;
+  }
+  .rotated1 {
+    transform: rotate(45deg) translate(10px, 17px);
+ }
+.rotated2 {
+  opacity: 0;
+}
+
+  .rotated3 {
+  transform: rotate(-45deg) translate(0, -9px);
+  }
+
+
+
+header 
+{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    /* border-radius: 20px; */
+    max-height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img 
+{
+    width: 75px;
+    /* border-radius: 20px; */
+}
+
+
+nav {
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    left:50%;
+    top:75px;
+    transition: ease-in-out 0.5s;
+}
+
+.nav-hide
+{
+    left: 100%;
+    transition: ease-in-out 0.5s;
+}
+.pr-img 
+{
+    width: clamp(200px, 30%, 400px);
+    /* width: 500px; */
+    margin-top: 50px;
+   
+
+}
+
+.pr-img img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:50px;
+    gap: 50px;
+   
+}
+
+.pr-info 
+{
+    background-color: rgb(7, 1, 1, 0.5);
+    color: rgb(255, 255, 255);
+    width: clamp(200px, 80%, 400px);
+    /* text-align: center; */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:  5px 5px 10px rgba(70,90,105);
+} 
+
+.info-just
+{
+    display: flex;
+    gap:50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 900px){
+ 
+
+
+body 
+{
+
+    background-size: cover;
+
+}
+
+.info-just {
+    flex-direction: row;
+}
+/* .pr-img{
+    align-self: flex-start;
+} */
+
+nav {
+    width: 30%;
+    left:70%;
+   
+   
+}
+
+}
