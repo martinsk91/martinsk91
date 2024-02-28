@@ -136,23 +136,23 @@ nav {
 
 body 
 {
-
-    background-size: cover;
-
+background-size: cover;
 }
 
-.info-just {
-    flex-direction: row;
+.info-just
+{
+flex-direction: row;
 }
-/* .pr-img{
-    align-self: flex-start;
-} */
 
-nav {
+nav
+{
     width: 30%;
     left:70%;
-   
-   
 }
-
+.flex-center
+{
+    flex-direction: row;
+    padding-top: 300px;
+    /* justify-content: flex-start; */
+}
 }
