@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/navbar.js" type="module"></script>
+    <script defer src="/js/modal.js"></script>
+    <script defer src="/js/formvalidation.js"></script>
     
     <title>Martin Skaarer</title>
 </head>
@@ -19,32 +21,100 @@
         </button>
         <nav class="nav-hide">
             <ul>
-                <li><a href="index.html">About me</a></li>
-                <li><a href="#">My Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                
             </ul>
         </nav>
     </header>
+    <!-- <div class="modal" id="modal1"><img src="/images/ccp1.PNG" alt=""></div>
+    <div class="modal" id="modal2"></div>
+    <div class="modal" id="modal3"></div>
+    <div class="overlay"></div> -->
     <main>
-        
-      <section class="flex-center">
-        
+     
+      <section class="section-1" id="about">
+        <h1>Martin Skaarer</h1>
+        <div class="flex-center-1">
         <div class="pr-img">
-            <img src="/images/profile.jpg" alt="">
+            <img src="/images/pro-img.jpg" alt="">
         </div>
         
             <div class="pr-info">
                 <p> Hi there! I'm Martin Skaarer, a passionate front-end development student with a keen interest in building delightful and user-friendly web experiences. Currently, I'm exploring the exciting world of web development, honing my skills in HTML, CSS, and JavaScript.
                 </p>
             </div>
-
+        </div>
     
        
       </section>
-      <section>
-
-      </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+      <div class="flex-center">
+       
+        <div class="Projects">
+            <h3>cross-course-project</h3>
+          
+            <img src="/images/ccp1.PNG" alt="iamge of cross-course Project" id="img1">
+            <p>this is the first project that i did in the school
+            </p>
+            <a href="https://github.com/martinsk91/cms_ca_dev">github</a>
+            <a href="https://martin-cms-delivery.netlify.app/">Live</a>
+    
+        </div>
+        <div class="Projects">
+            <h3>Semester Project</h3>
+          
+            <img src="/images/ccp1.PNG" alt="iamge of cross-course Project" id="img1">
+            <p>this is the first project that i did in the school
+            </p>
+            <a href="https://github.com/martinsk91/semester_project">github</a>
+            <a href="https://semester-project-martin.netlify.app/">Live</a>
+    
+        </div>
+        <div class="Projects">
+            <h3>Project Exam</h3>
+          
+            <img src="/images/ccp1.PNG" alt="iamge of cross-course Project" id="img1">
+            <p>this is the first project that i did in the schoolthis is the first project that i did in the schoolthis is the first project that i did in the schoolthis is the first project that i did in the school
+            </p>
+            <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-martinsk91">github</a>
+            <a href="https://project-exam-martin-s.netlify.app/">Live</a>
+    
+        </div>
+        
+      </div>
+    </section>
+      <section id="contact">
+        <h2>Contact me:</h2>
+    <form action="#" method="GET">
+        <div class="formdiv">
+            <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="enter your name">
+             </div>
+             <p id="#namep"></p>
+             <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="enter your email">
+             </div>
+            <p id="#emailp"></p>
+            <div>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="your subject">
+             </div>
+             <p id="#subjectp"></p>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="enter your message" class="message"></textarea>
+             </div>
+             <p id="#messagep"></p>
+             <input id="submit" type="submit" value="Submit" class="submit">
+        </div>
+        
+    </form>
+</section>
     </main>
 </body>
 </html>
