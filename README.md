@@ -8,5 +8,4 @@ About Me:
 - 📫 Contact me @ martinskaarer91@gmail.com
 - 😄 So far i have learned HTML/CSS, Javascript, css and javascript frameworks
 - ⚡ this is my portefolio (https://portefolio-2-martin.netlify.app/)
-- 
 
